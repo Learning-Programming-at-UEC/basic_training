@@ -167,7 +167,7 @@ TypeError: 'str' object does not support item assignment
 （3）一致すればHappy birthday！ と表示する（一致しなければ何も表示しない）
 
 ### コード
-```python=
+```python
 # if文の練習
 answer = input ('今日は誕生日？ :  yes / no')
 if answer =='yes':
@@ -204,7 +204,7 @@ if answer =='yes':
 （4）一致しなければ「非誕生日の日、万歳！」と表示する
 
 ### コード
-```python=0
+```python
 # if文の練習
 answer = input ('今日は誕生日？ :  yes / no ')
 if answer =='yes':
@@ -230,7 +230,7 @@ else:
 |手順|（1） ユーザに 1から180 までの数字を選んでひとつ入力してもらう<br>（2） 条件は、1以上90未満は鋭角、90は直角、90より大きく180未満は鈍角<br>（3）入力された数字と条件を比較した結果を実行|
 
 ### コード
-```python=0
+```python
 # if_elif_else文の練習
 answer = int( input('1から180までの数字を一つ入力してください:'))
 if 1 <= answer and answer < 90 :  
@@ -273,7 +273,7 @@ else:
 
 
 ### コード
-```python=0
+```python
 # and を使った複雑な条件判断処理の練習
 temperature = int(input("室温を入力してください："))
 humidity = int(input("湿度を入力してください："))
@@ -336,7 +336,7 @@ BMIとは Body Mass Index　ボディマス指数
 ### コード
 
 # bmiプログラム　
-```python=
+```python
 h = int(input("あなたの身長をcm単位で入力してください")) / 100
 w = int(input("あなたの体重をkg単位で入力してください"))
 bmi = w / ( h ** 2 )
@@ -378,7 +378,7 @@ else:
 |手順|print()関数で、引数を1月から12月まで毎回書いて画面に表示させる|
 
 ### コード
-```python=0
+```python
 # 1月から12月まで表示させるプログラム
 print( “ 1月 ” )
 print( “ 2月 ” )
@@ -403,7 +403,7 @@ print( “ 12月 ” )
 |手順|（1） 繰り返し文を使う<br>（2）表示させる|
 
 ### コード
-```python=0
+```python
 # 1月から12月までループ文で表示させるプログラム
 for i in range(12):
      print(i+1, '月')
@@ -422,7 +422,7 @@ for i in range(12):
 ## 8　range() 関数の引数のセット方法のバリエーション
 
 ### コード
-```python=0
+```python
 # 1月から12月までループ文で表示させるプログラム
 for i in range( 1, 13 ):
     print( i, '月')
@@ -441,7 +441,7 @@ for i in range( 1, 13 ):
 ## 9　1月から12月まで表示させるプログラム（while文を使う場合）
 
 ### コード
-```python=0
+```python
 # 1月から12月までwhile文で表示させるプログラム
 i = 1
 while i <= 12:
@@ -472,7 +472,7 @@ while i <= 12:
 |手順|（1）ユーザにfizzbuzzで遊ぶ最後の数字を入力してもらう。（終わりの数を設定しないと永遠に続くから）<br>（2）0からスタートして1ずつ増やし、ユーザが指定した数までいく。その間に<br>3の倍数がきたらfizzと表示<br>5の倍数がきたらbuzzと表示<br>3と5の公倍数がきたらfizzbuzzと表示<br>（3）結果を表示する|
 
 ### コード
-```python=0
+```python
 # fizzbuzzプログラム
 n = int(input('最後の数を入力してください'))
 for i in range( 1, n ):
@@ -504,7 +504,7 @@ for i in range( 1, n ):
 |手順|（1）コピペしてゲームを楽しむ<br>（2）コードの作り方の意味を考える<br>（3）改変する|
 
 ### コード
-```python=0
+```python
 import random
 
 secret = random.randrange( 1, 101 )
@@ -535,7 +535,7 @@ print("予想回数は ", tries,"回でした")
 |手順|（1）コピペしてゲームを楽しむ<br>（2）コードの作り方の意味を考える<br>（3）改変する|
 
 ### コード
-```python=0
+```python
 import random
 
 moves = ['r', 'p', 's']
