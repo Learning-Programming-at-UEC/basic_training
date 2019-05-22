@@ -380,18 +380,18 @@ else:
 ### コード
 ```python
 # 1月から12月まで表示させるプログラム
-print( “ 1月 ” )
-print( “ 2月 ” )
-print( “ 3月 ” )
-print( “ 4月 ” )
-print( “ 5月 ” )
-print( “ 6月 ” )
-print( “ 7月 ” )
-print( “ 8月 ” )
-print( “ 9月 ” )
-print( “ 10月 ” )
-print( “ 11月 ” )
-print( “ 12月 ” )
+print('1月')
+print('2月')
+print('3月')
+print('4月')
+print('5月')
+print('6月')
+print('7月')
+print('8月')
+print('9月')
+print('10月')
+print('11月')
+print('12月')
 ```
 
 ## 7　1月から12月まで表示させるプログラム（for文を使う場合）
