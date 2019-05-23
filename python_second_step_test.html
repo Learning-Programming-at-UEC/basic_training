@@ -1,0 +1,1418 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        2nd Step の 基礎トレ　説明と確認 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" style="position: relative;"><h1 id="2nd-Step-の-基礎トレ-説明と確認"><a class="anchor hidden-xs" href="#2nd-Step-の-基礎トレ-説明と確認" title="2nd-Step-の-基礎トレ-説明と確認"><span class="octicon octicon-link"></span></a>2nd Step の 基礎トレ　説明と確認</h1><p>趣旨の説明</p><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ねらい</td>
+<td>1st Stepで「順次・選択・繰り返し」の「順次」が分かったので、<br>2nd Stepでは「選択・繰り返し」を使いこなせるようにする。</td>
+</tr>
+<tr>
+<td>方法</td>
+<td>1st Step と同じ</td>
+</tr>
+<tr>
+<td>想定時間</td>
+<td>20時間</td>
+</tr>
+</tbody>
+</table><h2 id="0-1st-Stepの復習（ここで知る新しい知識も入っています）"><a class="anchor hidden-xs" href="#0-1st-Stepの復習（ここで知る新しい知識も入っています）" title="0-1st-Stepの復習（ここで知る新しい知識も入っています）"><span class="octicon octicon-link"></span></a>0　1st Stepの復習（ここで知る新しい知識も入っています）</h2><h3 id="電卓"><a class="anchor hidden-xs" href="#電卓" title="電卓"><span class="octicon octicon-link"></span></a>電卓</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> + <span class="hljs-number">4</span>		<span class="hljs-comment"># int型の計算</span>
+<span class="hljs-number">7</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">30</span> - <span class="hljs-number">2</span> * <span class="hljs-number">6</span>		<span class="hljs-comment"># 計算の順序に注意</span>
+<span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>( <span class="hljs-number">30</span> - <span class="hljs-number">2</span> ) * <span class="hljs-number">6</span> / <span class="hljs-number">4</span>	<span class="hljs-comment"># （）を優先</span>
+<span class="hljs-number">42.0</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">9</span> / <span class="hljs-number">2</span>		<span class="hljs-comment"># 除算するとfloat型が返ってくる</span>
+<span class="hljs-number">4.5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">10</span> / <span class="hljs-number">3</span>		<span class="hljs-comment"># 割り切れない場合　末尾に注意</span>
+<span class="hljs-number">3.3333333333333335</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">18</span> / <span class="hljs-number">7</span>		<span class="hljs-comment"># 割り切れない計算</span>
+<span class="hljs-number">2.5714285714285716</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">18</span> // <span class="hljs-number">7</span>		<span class="hljs-comment"># 除算の整数値だけ</span>
+<span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">18</span> % <span class="hljs-number">7</span>		<span class="hljs-comment"># 除算の余りだけ</span>
+<span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> * <span class="hljs-number">7</span> + <span class="hljs-number">4</span>		<span class="hljs-comment"># 検算　答え×割る数+余り</span>
+<span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> ** <span class="hljs-number">2</span>		<span class="hljs-comment"># 累乗の例</span>
+<span class="hljs-number">36</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">4</span>		<span class="hljs-comment"># 累乗の例</span>
+<span class="hljs-number">16</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3.14</span> * <span class="hljs-number">5</span>  /  <span class="hljs-number">2.5</span>	<span class="hljs-comment"># int型とfloat型の混在計算　結果はfloat型</span>
+<span class="hljs-number">6.28</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6.28</span> / <span class="hljs-number">4</span>
+<span class="hljs-number">1.57</span>
+</code></pre><h3 id="変数"><a class="anchor hidden-xs" href="#変数" title="変数"><span class="octicon octicon-link"></span></a>変数</h3><pre><code class="bash hljs">&gt;&gt;&gt; <span class="hljs-comment"># 長方形の面積計算</span>
+&gt;&gt;&gt; width = 100
+&gt;&gt;&gt; height = 80
+&gt;&gt;&gt; area = width * height
+&gt;&gt;&gt; <span class="hljs-built_in">print</span>(area)
+8000
+</code></pre><h3 id="エラー"><a class="anchor hidden-xs" href="#エラー" title="エラー"><span class="octicon octicon-link"></span></a>エラー</h3><pre><code class="bash hljs">&gt;&gt;&gt; weight
+Traceback (most recent call last):
+  File <span class="hljs-string">"&lt;pyshell#18&gt;"</span>, line 1, <span class="hljs-keyword">in</span> &lt;module&gt;
+    weight
+NameError: name <span class="hljs-string">'weight'</span> is not defined
+（ネームエラー：　weightという名前は定義されてません）
+</code></pre><h3 id="文字列"><a class="anchor hidden-xs" href="#文字列" title="文字列"><span class="octicon octicon-link"></span></a>文字列</h3><pre><code class="python hljs">&gt;&gt;&gt; 'is not'			# シングルクオート
+'is not'
+&gt;&gt;&gt; 'isn't'			# クオートが重なるとどうなるか実験
+SyntaxError: invalid syntax
+&gt;&gt;&gt; 'isn\'t'			# シングルクオートが重なるときは「\」でエスケープ
+"isn't"
+&gt;&gt;&gt; "isn't"			# もしくはダブルクオート
+"isn't"
+&gt;&gt;&gt; 'Do you like me?'		# 私が好き？
+'Do you like me?'
+&gt;&gt;&gt; '"Yes," he said.'		# はい、と彼は言った　異なるクオートを使った場合
+'"Yes," he said.'
+&gt;&gt;&gt; "\"Yes, \" she said."	# はい、と彼女は言った　エスケープを使った場合
+'"No,"she said.'
+</code></pre><h3 id="print（）関数"><a class="anchor hidden-xs" href="#print（）関数" title="print（）関数"><span class="octicon octicon-link"></span></a>print（）関数</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">"\"No, \" she said."</span>
+<span class="hljs-string">'"No,"she said.'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(<span class="hljs-string">"\"No, \" she said."</span>)	<span class="hljs-comment"># print()関数を使うと読みやすい出力結果が得られる</span>
+<span class="hljs-string">"No,"</span>she said.
+
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">'I love you!'</span>* <span class="hljs-number">3</span>				<span class="hljs-comment"># 文字列でも算術演算子が使える</span>
+<span class="hljs-string">'I love you! I love you! I love you! '</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">"i love you!"</span>+ <span class="hljs-string">"i love you!"</span>+<span class="hljs-string">"i love you! "</span>
+<span class="hljs-string">'i love you! i love you! i love you!'</span>
+</code></pre><h3 id="文字列とインデックス"><a class="anchor hidden-xs" href="#文字列とインデックス" title="文字列とインデックス"><span class="octicon octicon-link"></span></a>文字列とインデックス</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span>word = <span class="hljs-string">"LOVE"</span>	<span class="hljs-comment"># 文字列とインデックスの関係</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">0</span>]
+<span class="hljs-string">'L'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">1</span>]
+<span class="hljs-string">'O'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">2</span>]
+<span class="hljs-string">'V'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">3</span>]
+<span class="hljs-string">'E'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">-1</span>]		<span class="hljs-comment"># マイナスのインデックスの始まりは-1</span>
+<span class="hljs-string">'E'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">-2</span>]
+<span class="hljs-string">'V'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">-3</span>]
+<span class="hljs-string">'O'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">-4</span>]
+<span class="hljs-string">'L'</span>
+</code></pre><h3 id="文字列とスライス（切り取り）"><a class="anchor hidden-xs" href="#文字列とスライス（切り取り）" title="文字列とスライス（切り取り）"><span class="octicon octicon-link"></span></a>文字列とスライス（切り取り）</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span>word = <span class="hljs-string">"LOVE"</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>]		<span class="hljs-comment"># LOVEのインデックス0以上2未満</span>
+<span class="hljs-string">'LO'</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">2</span>:<span class="hljs-number">4</span>]
+<span class="hljs-string">'VE'</span>
+</code></pre><h3 id="文字列は変更不可能（イミュータブル）"><a class="anchor hidden-xs" href="#文字列は変更不可能（イミュータブル）" title="文字列は変更不可能（イミュータブル）"><span class="octicon octicon-link"></span></a>文字列は変更不可能（イミュータブル）</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span>word[<span class="hljs-number">1</span>]=<span class="hljs-string">'i'</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">"&lt;pyshell#65&gt;"</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+    word[<span class="hljs-number">1</span>]=<span class="hljs-string">'i'</span>
+TypeError: <span class="hljs-string">'str'</span> object does <span class="hljs-keyword">not</span> support item assignment
+</code></pre><h3 id="len関数"><a class="anchor hidden-xs" href="#len関数" title="len関数"><span class="octicon octicon-link"></span></a>len()関数</h3><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span>len(word)		<span class="hljs-comment"># 変数wordの値（love）の長さを調べる</span>
+<span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>len(<span class="hljs-string">'I love you!'</span>)	<span class="hljs-comment"># 文字列の長さを調べる</span>
+<span class="hljs-number">11</span>
+</code></pre><h3 id="前の二つの数を足すと次の数になる数列のプログラミング"><a class="anchor hidden-xs" href="#前の二つの数を足すと次の数になる数列のプログラミング" title="前の二つの数を足すと次の数になる数列のプログラミング"><span class="octicon octicon-link"></span></a>前の二つの数を足すと次の数になる数列のプログラミング</h3><p>・フィボナッチ数列<br>
+・イタリアの数学者レオナルド・フィボナッチにちなんだ名前<br>
+・最初の数と二番目の数は1と設定する<br>
+・1, 1, 2, 3, 5, 8, ・・・</p><pre><code class="python hljs"><span class="hljs-meta">&gt;&gt;&gt; </span>a, b = <span class="hljs-number">0</span>, <span class="hljs-number">1</span>		<span class="hljs-comment"># a = 0 と b = 1 を一行で書く（多重代入）　</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">while</span> b &lt; <span class="hljs-number">10</span>:	<span class="hljs-comment"># 無限に続くと困るので10までにした</span>
+	print(b)
+	a, b = b, a + b		<span class="hljs-comment"># ここでも多重代入</span>
+
+	
+<span class="hljs-number">1</span>
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+<span class="hljs-number">8</span>
+</code></pre><h2 id="1-今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）"><a class="anchor hidden-xs" href="#1-今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）" title="1-今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）"><span class="octicon octicon-link"></span></a>1　今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>今日が誕生日であれば、おめでとうと表示してくれる</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>if文の使い方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1） ユーザに今日が誕生日かどうか yes か no で答えてもらう<br>（2） ユーザの答えと文字列yesが一致するか確かめる<br>（3）一致すればHappy birthday！ と表示する（一致しなければ何も表示しない）</td>
+</tr>
+</tbody>
+</table><h3 id="コード"><a class="anchor hidden-xs" href="#コード" title="コード"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code"><span class="hljs-comment"># if文の練習</span>
+answer = input (<span class="hljs-string">'今日は誕生日？ :  yes / no'</span>)
+<span class="hljs-keyword">if</span> answer ==<span class="hljs-string">'yes'</span>:
+    <span class="hljs-keyword">print</span> (<span class="hljs-string">'Happy Birthday!'</span>)
+</div></div></code></pre><h3 id="コードの解説"><a class="anchor hidden-xs" href="#コードの解説" title="コードの解説"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>input (‘今日は誕生日？ :  yes / no’)</td>
+<td>input()関数で、ユーザに今日は誕生日かを聞いて、yes か no の文字列を返してもらう</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>answer = input (‘今日は誕生日？ :  yes / no’)</td>
+<td>・ユーザが入力した文字列を変数 answer に代入する<br>・変数 answer には、yes か no の文字列が入っている（はず）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>if answer ==‘yes’:</td>
+<td>・この練習のポイントであるif文（いふぶん）<br>・if は「もし～ならば」の意味<br>・選択、条件分岐の機能<br>if文はコロン「:」で終わる</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>if answer ==‘yes’:</td>
+<td>比較演算子「==」で左辺と右辺の値が等しいかどうかを確認する</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>answer =='yes ’</td>
+<td>この条件が成り立てば True（真 しん）</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2</td>
+<td>answer =='yes ’</td>
+<td>この条件が成り立なければ False（偽 ぎ）</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+<td>type( answer ==‘yes’)</td>
+<td>&lt;class ‘bool’&gt;</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td>条件 condition</td>
+</tr>
+<tr>
+<td>9</td>
+<td>3</td>
+<td>□□□□print (‘Happy Birthday!’)</td>
+<td>True の場合、お祝いの言葉を表示する</td>
+</tr>
+<tr>
+<td>10</td>
+<td>3</td>
+<td>□□□□print (‘Happy Birthday!’)</td>
+<td>if文の次からの行（ブロック）は必ずインデントする</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td></td>
+<td>False の場合、何も表示されない</td>
+</tr>
+</tbody>
+</table><h2 id="2-今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）"><a class="anchor hidden-xs" href="#2-今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）" title="2-今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）"><span class="octicon octicon-link"></span></a>2　今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>今日が誕生日だとおめでとうと表示<br>誕生日ではない場合も表示が出る</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>if-else文の使い方<br>2択の条件分岐のやり方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1） ユーザに今日が誕生日かどうか yes か no で答えてもらう<br>（2） ユーザの答えと文字列yesが一致するか確かめる<br>（3）一致すればHappy birthday！ と表示<br>（4）一致しなければ「非誕生日の日、万歳！」と表示する</td>
+</tr>
+</tbody>
+</table><h3 id="コード1"><a class="anchor hidden-xs" href="#コード1" title="コード1"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span></div><div class="code"><span class="hljs-comment"># if文の練習</span>
+answer = input (<span class="hljs-string">'今日は誕生日？ :  yes / no '</span>)
+<span class="hljs-keyword">if</span> answer ==<span class="hljs-string">'yes'</span>:
+    <span class="hljs-keyword">print</span> (<span class="hljs-string">'Happy Birthday!'</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">'非誕生日の日、万歳！'</span>)
+</div></div></code></pre><h3 id="コードの解説1"><a class="anchor hidden-xs" href="#コードの解説1" title="コードの解説1"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>else:</td>
+<td>・else は「さもなくば」の意<br>・if文が False ならば、else文に移る<br>・else文もコロン「:」で終わる</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>□□□□print(‘非誕生日の日、万歳！’)</td>
+<td>2行目のコードがFalse だった場合の表示</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>□□□□print(‘非誕生日の日、万歳！’)</td>
+<td>else文の次からの行（ブロック）は必ずインデントする</td>
+</tr>
+</tbody>
+</table><h2 id="3-鋭角、直角、鈍角の判定プログラム（if-elif-else文）"><a class="anchor hidden-xs" href="#3-鋭角、直角、鈍角の判定プログラム（if-elif-else文）" title="3-鋭角、直角、鈍角の判定プログラム（if-elif-else文）"><span class="octicon octicon-link"></span></a>3　鋭角、直角、鈍角の判定プログラム（if-elif-else文）</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>入力した値から、鋭角、直角、鈍角を判断して表示</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>if-elif-else文の使い方<br>3択以上の条件分岐の方法</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1） ユーザに 1から180 までの数字を選んでひとつ入力してもらう<br>（2） 条件は、1以上90未満は鋭角、90は直角、90より大きく180未満は鈍角<br>（3）入力された数字と条件を比較した結果を実行</td>
+</tr>
+</tbody>
+</table><h3 id="コード2"><a class="anchor hidden-xs" href="#コード2" title="コード2"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="hljs-comment"># if_elif_else文の練習</span>
+answer = int( input(<span class="hljs-string">'1から180までの数字を一つ入力してください:'</span>))
+<span class="hljs-keyword">if</span> <span class="hljs-number">1</span> &lt;= answer <span class="hljs-keyword">and</span> answer &lt; <span class="hljs-number">90</span> :  
+     print(<span class="hljs-string">'鋭角'</span>)
+<span class="hljs-keyword">elif</span> answer == <span class="hljs-number">90</span> :
+     print(<span class="hljs-string">'直角'</span>)
+<span class="hljs-keyword">else</span>:
+     print(<span class="hljs-string">'鈍角'</span>)
+</div></div></code></pre><h3 id="コードの解説2"><a class="anchor hidden-xs" href="#コードの解説2" title="コードの解説2"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>answer = int( input( ‘ ～： ’ )</td>
+<td>input()関数で得た値をint型に変換して変数anwerに代入</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>if 1 &lt;= answer and answer &lt; 90 :</td>
+<td>・if文で最初の条件を示す<br>・比較演算子「&lt;=」は「右辺が左辺以上（左辺が右辺以下）」の意<br>・比較演算子「&lt;」は「右辺が左辺より大（左辺が右辺より小＝未満）」の意</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>if 1 &lt;= answer and answer &lt; 90 :</td>
+<td>・and は論理演算子<br>・右辺と左辺が共にTrueの時にTrue<br>・Falseなら4行目のコードに進む</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>□□□□print(‘鋭角’)</td>
+<td>・if文の後のブロックなので、インデント<br>・2行目がTrueなら鋭角と表示</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+<td>elif answer == 90 :</td>
+<td>・2番目の条件を示すelif文<br>・elif文の終わりはコロン</td>
+</tr>
+<tr>
+<td>6</td>
+<td>4</td>
+<td>answer == 90 :</td>
+<td>・比較演算子「==」で右辺と左辺を照らし合わせる<br>・Falseなら次のコードに進む</td>
+</tr>
+<tr>
+<td>7</td>
+<td>5</td>
+<td>□□□□print(‘直角’)</td>
+<td>・elif文の後のブロックなので、インデント<br>・4行目がTrueなら直角と表示</td>
+</tr>
+<tr>
+<td>8</td>
+<td>6</td>
+<td>else:</td>
+<td>・if文もFalse、elif文もFalseの場合、このコードに来る<br>・else文の終わりはコロン<br>・わざわざ90度より大きく180度以下と書く必要はない</td>
+</tr>
+<tr>
+<td>9</td>
+<td>7</td>
+<td>□□□□ print( '鈍角 ')</td>
+<td>・else文の後のブロックなので、インデント<br>・6行目がTrueなら鈍角と表示</td>
+</tr>
+</tbody>
+</table><h2 id="4-複雑な条件判断処理"><a class="anchor hidden-xs" href="#4-複雑な条件判断処理" title="4-複雑な条件判断処理"><span class="octicon octicon-link"></span></a>4　複雑な条件判断処理</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>現在の室内温度・湿度が快適かどうかを判断する</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>論理演算子 and の使い方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1） ユーザに室内の温温と湿度を入力してもらう<br>（2） 入力値を表1と比較し、快適な室内温度・湿度かそうでないかを判定<br>（3） 判定の結果を表示</td>
+</tr>
+</tbody>
+</table><p><strong>表1</strong><br>
+快適な室内の温度・湿度</p><table>
+<thead>
+<tr>
+<th>季節</th>
+<th>快適な室内温度</th>
+<th>快適な室内湿度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冬</td>
+<td>18～22度</td>
+<td>45～60%</td>
+</tr>
+<tr>
+<td>夏</td>
+<td>25～28度</td>
+<td>55～65%</td>
+</tr>
+</tbody>
+</table><h3 id="コード3"><a class="anchor hidden-xs" href="#コード3" title="コード3"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code"><span class="hljs-comment"># and を使った複雑な条件判断処理の練習</span>
+temperature = int(input(<span class="hljs-string">"室温を入力してください："</span>))
+humidity = int(input(<span class="hljs-string">"湿度を入力してください："</span>))
+<span class="hljs-keyword">if</span> <span class="hljs-number">18</span> &lt;= temperature &lt;= <span class="hljs-number">22</span> <span class="hljs-keyword">and</span> <span class="hljs-number">45</span> &lt;= humidity &lt;= <span class="hljs-number">60</span>:
+     print(<span class="hljs-string">"快適です"</span>)
+<span class="hljs-keyword">elif</span> temperature &lt; <span class="hljs-number">18</span> <span class="hljs-keyword">and</span> humidity &lt; <span class="hljs-number">45</span>:
+     print(<span class="hljs-string">"寒くて乾燥ぎみです"</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">22</span> &lt; temperature <span class="hljs-keyword">and</span> <span class="hljs-number">60</span> &lt; humidity:
+     print(<span class="hljs-string">"温度が高すぎで多湿ぎみです"</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">22</span> &lt; temperature <span class="hljs-keyword">and</span> humidity &lt; <span class="hljs-number">45</span>:
+    print(<span class="hljs-string">"温度が高すぎで乾燥ぎみです"</span>)
+<span class="hljs-keyword">else</span>:
+     print(<span class="hljs-string">"快適にするためエアコンで調整してください"</span>)
+</div></div></code></pre><h3 id="コードの解説3"><a class="anchor hidden-xs" href="#コードの解説3" title="コードの解説3"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td>temperature</td>
+<td>変数名の temperature は温度の意</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>humidity</td>
+<td>変数名の humidity は湿度の意</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>18 &lt;= temperature &lt;= 22 and 45 &lt;= humidity &lt;= 60</td>
+<td>快適な温度と湿度の範囲を and で結ぶ<br>両方がTrueだと、and がTrueになる</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td>□□□□print(‘快適です’)</td>
+<td>この温湿度ゾーンだと快適</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td>temperature &lt; 18 and humidity &lt; 45</td>
+<td>温度が18度を下回り、湿度が45％を下回る場合</td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td>□□□□print(‘寒くて乾燥ぎみです’)</td>
+<td>温度が下がると飽和水蒸気量も<br>下がるので必然的に低湿度になる</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>22 &lt; temperature and 60 &lt; humidity</td>
+<td>温度が22度を上回り、湿度も60％を上回る場合</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>□□□□print(‘温度が高すぎで多湿ぎみです’)</td>
+<td>温度が上がると飽和水蒸気量も<br>上がるので高湿度になりがち</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>22 &lt; temperature and humidity &lt; 45</td>
+<td>温度が22度を上回る一方で湿度が45％を下回る場合</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>□□□□print( ‘温度が高すぎで乾燥ぎみです’)</td>
+<td>加湿が必要ってこど</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>else:</td>
+<td>他の場合は無視して一括する</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td>□□□□print(‘快適にするためエアコンで調整してください’)</td>
+<td>人任せのメッセージでお茶を濁しました</td>
+</tr>
+</tbody>
+</table><h2 id="5-BMI判定プログラム"><a class="anchor hidden-xs" href="#5-BMI判定プログラム" title="5-BMI判定プログラム"><span class="octicon octicon-link"></span></a>5　BMI判定プログラム</h2><p>BMIとは Body Mass Index　ボディマス指数</p><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>体重と身長から肥満度を知り、健康管理に役立てる</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>if文の簡単な使い方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>1. ユーザに体重（単位kg）と身長（単位m）を入力してもらう。<br>2. そのデータを次の計算式に入れて計算する。<br>体重 ÷ 身長の2乗<br>2乗を習っていない生徒は次で計算<br>体重 ÷ （ 身長 × 身長 ）<br>3. 計算結果を表2の基準で判定する。<br>4. 計算結果と判定をユーザに表示する。</td>
+</tr>
+</tbody>
+</table><p>表2</p><table>
+<thead>
+<tr>
+<th>計算結果</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18.5 未満</td>
+<td>痩せ型</td>
+</tr>
+<tr>
+<td>18.5 以上 25 未満</td>
+<td>普通</td>
+</tr>
+<tr>
+<td>25 以上 35 未満</td>
+<td>ちょっと肥満</td>
+</tr>
+<tr>
+<td>35 以上</td>
+<td>肥満</td>
+</tr>
+</tbody>
+</table><h3 id="コード4"><a class="anchor hidden-xs" href="#コード4" title="コード4"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code"><span class="hljs-comment"># bmiプログラム</span>
+h = int(input(<span class="hljs-string">"あなたの身長をcm単位で入力してください"</span>)) / <span class="hljs-number">100</span>
+w = int(input(<span class="hljs-string">"あなたの体重をkg単位で入力してください"</span>))
+bmi = w / ( h ** <span class="hljs-number">2</span> )
+print(<span class="hljs-string">"あなたのBMI"</span>, bmi)
+<span class="hljs-keyword">if</span> bmi &lt; <span class="hljs-number">18.5</span>:
+     print(<span class="hljs-string">"判定　やせ型です"</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">18.5</span> &lt;= bmi &lt; <span class="hljs-number">25</span>:
+     print(<span class="hljs-string">"判定　ふつうです"</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">25</span> &lt;= bmi &lt; <span class="hljs-number">35</span>:
+     print(<span class="hljs-string">"判定　ちょっと肥満型です"</span>)
+<span class="hljs-keyword">else</span>:
+     print(<span class="hljs-string">"判定　肥満型です"</span>)
+</div></div></code></pre><h3 id="コードの解説4"><a class="anchor hidden-xs" href="#コードの解説4" title="コードの解説4"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td>h = int( input(“あなたの身長~”)) / 100</td>
+<td>得た文字列をint型に変換し、<br>m単位にした値を変数 h に代入<br>3行分を1行に圧縮した</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>w = int(input(“あなたの体重~”)</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>bmi = w / ( h ** 2 )</td>
+<td>bmi の計算式。h**2 は h * h と同じ。</td>
+</tr>
+</tbody>
+</table><p>応用の参考例　モチベーショとパフォーマンスのマトリクス</p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th>パフォーマンス指数</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>1～2</td>
+<td>3～8</td>
+<td>9～10</td>
+</tr>
+<tr>
+<td></td>
+<td>9～10</td>
+<td>精進せよ</td>
+<td>甘んじるな</td>
+<td>自然体で持続せよ</td>
+</tr>
+<tr>
+<td><strong>モチベーション指数</strong></td>
+<td>3～8</td>
+<td>成果発表で力を伸ばせ</td>
+<td>ボーッと生きてんじゃねえよ！</td>
+<td>人に刺激を貰え</td>
+</tr>
+<tr>
+<td></td>
+<td>1～2</td>
+<td>つける薬を探せ</td>
+<td>資産を食い潰すな</td>
+<td>どういうこと？</td>
+</tr>
+</tbody>
+</table><h2 id="6-1月から12月まで表示させるプログラム（for文を使わない場合）"><a class="anchor hidden-xs" href="#6-1月から12月まで表示させるプログラム（for文を使わない場合）" title="6-1月から12月まで表示させるプログラム（for文を使わない場合）"><span class="octicon octicon-link"></span></a>6　1月から12月まで表示させるプログラム（for文を使わない場合）</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>1月から12月まで、文字列を画面に表示する</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>この例のやり方は、Perlの開発者ラリー・ウォールが言う「プログラマの三大美徳のうち怠惰 Lazinessと短気 Impatience」に反する。この場合の怠惰や短気とは、効率の悪いことを時間をかけてやり続けるのは勤勉とは言わない、アタマを使って短時間でさっと済ませてのんびりしよう、という意味。</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>print()関数で、引数を1月から12月まで毎回書いて画面に表示させる</td>
+</tr>
+</tbody>
+</table><h3 id="コード5"><a class="anchor hidden-xs" href="#コード5" title="コード5"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span></div><div class="code"><span class="hljs-comment"># 1月から12月まで表示させるプログラム</span>
+print( “ <span class="hljs-number">1</span>月 ” )
+print( “ <span class="hljs-number">2</span>月 ” )
+print( “ <span class="hljs-number">3</span>月 ” )
+print( “ <span class="hljs-number">4</span>月 ” )
+print( “ <span class="hljs-number">5</span>月 ” )
+print( “ <span class="hljs-number">6</span>月 ” )
+print( “ <span class="hljs-number">7</span>月 ” )
+print( “ <span class="hljs-number">8</span>月 ” )
+print( “ <span class="hljs-number">9</span>月 ” )
+print( “ <span class="hljs-number">10</span>月 ” )
+print( “ <span class="hljs-number">11</span>月 ” )
+print( “ <span class="hljs-number">12</span>月 ” )
+</div></div></code></pre><h2 id="7-1月から12月まで表示させるプログラム（for文を使う場合）"><a class="anchor hidden-xs" href="#7-1月から12月まで表示させるプログラム（for文を使う場合）" title="7-1月から12月まで表示させるプログラム（for文を使う場合）"><span class="octicon octicon-link"></span></a>7　1月から12月まで表示させるプログラム（for文を使う場合）</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>1月から12月まで、文字列を画面に表示するスマートな方法</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>for文の使い方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1） 繰り返し文を使う<br>（2）表示させる</td>
+</tr>
+</tbody>
+</table><h3 id="コード6"><a class="anchor hidden-xs" href="#コード6" title="コード6"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span></div><div class="code"><span class="hljs-comment"># 1月から12月までループ文で表示させるプログラム</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">12</span>):
+     print(i+<span class="hljs-number">1</span>, <span class="hljs-string">'月'</span>)
+</div></div></code></pre><h3 id="コードの解説5"><a class="anchor hidden-xs" href="#コードの解説5" title="コードの解説5"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>for i in range(12):</td>
+<td>・for文<br>・構造 for 変数 in 繰り返し反復処理:</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>for i in range( 12 ):</td>
+<td>・構造　for 変数 in 繰り返し反復処理:<br>・i は変数名<br>・range()関数が反復処理して、一つずつ取り出される値を受け取る</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>for i in range( 12 ):</td>
+<td>・range()関数<br>・引数が12なので、range()関数は 0, 1, 2, 3, 4, 5, 6, 7, 8, 7, 9, 10, 11を取り出す</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>□□□□print( i+1, ‘月’)</td>
+<td>・print() 関数の引数が二つある<br>・i+1は、range() 関数が 0, 1, 2, 3・・・と順に取り出して i に代入した値に毎回1を足すという意味</td>
+</tr>
+</tbody>
+</table><h2 id="8-range-関数の引数のセット方法のバリエーション"><a class="anchor hidden-xs" href="#8-range-関数の引数のセット方法のバリエーション" title="8-range-関数の引数のセット方法のバリエーション"><span class="octicon octicon-link"></span></a>8　range() 関数の引数のセット方法のバリエーション</h2><h3 id="コード7"><a class="anchor hidden-xs" href="#コード7" title="コード7"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span></div><div class="code"><span class="hljs-comment"># 1月から12月までループ文で表示させるプログラム</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range( <span class="hljs-number">1</span>, <span class="hljs-number">13</span> ):
+    print( i, <span class="hljs-string">'月'</span>)
+</div></div></code></pre><h3 id="コードの解説6"><a class="anchor hidden-xs" href="#コードの解説6" title="コードの解説6"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>for i in range( 1, 13 ):</td>
+<td>・range(1, 13) と書いてあるので、取り出す数値は、1, 2, 3, 4, 5, 6, 7, 8, 7, 9, 10, 11, 12 となる<br>・range(1,13)は、1以上13未満の数を取り出せ、という意味</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>□□□□print( i, ‘月’)</td>
+<td><code>i</code>は一個目の引数、数字として表示される、<code>'月'</code>は二個目の引数、文字列の「月」として表示される</td>
+</tr>
+</tbody>
+</table><h2 id="9-1月から12月まで表示させるプログラム（while文を使う場合）"><a class="anchor hidden-xs" href="#9-1月から12月まで表示させるプログラム（while文を使う場合）" title="9-1月から12月まで表示させるプログラム（while文を使う場合）"><span class="octicon octicon-link"></span></a>9　1月から12月まで表示させるプログラム（while文を使う場合）</h2><h3 id="コード8"><a class="anchor hidden-xs" href="#コード8" title="コード8"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code"><span class="hljs-comment"># 1月から12月までwhile文で表示させるプログラム</span>
+i = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> i &lt;= <span class="hljs-number">12</span>:
+     print( i ,<span class="hljs-string">'月'</span>)
+     i = i + <span class="hljs-number">1</span>
+</div></div></code></pre><h3 id="コードの解説7"><a class="anchor hidden-xs" href="#コードの解説7" title="コードの解説7"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>i = 1</td>
+<td>変数 i に初期値の1を代入</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>while i &lt;= 12:</td>
+<td>・while文<br>・コロンで終わる<br>・構造　while 条件式:</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>while i &lt;= 12:</td>
+<td>・条件式は i &lt;= 12<br>・i が 12以下のときTrue という意味<br>・1行目で i の初期値が 1 に設定されているので、True となり次の行に進む</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>□□□□print( i ,‘月’)</td>
+<td>・ブロックの1行目<br>・i の初期値が1なので、最初は1月と表示</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+<td>□□□□i = i + 1</td>
+<td>・ブロックの2行目<br>・iに1を加え、iに代入という意味<br>・右辺の i である 1 に1を加え i に代入 <br>・2行目がTrueである限り、繰り返す<br>・i が 13 のとき条件式 i &lt;= 12 がFalseになり、ループが停止</td>
+</tr>
+</tbody>
+</table><h2 id="10-fizzbuzz-フィズバズ"><a class="anchor hidden-xs" href="#10-fizzbuzz-フィズバズ" title="10-fizzbuzz-フィズバズ"><span class="octicon octicon-link"></span></a>10　fizzbuzz　フィズバズ</h2><p>欧米の退屈しのぎ用の遊びfizzbuz<br>
+数名で遊ぶ。0からカウントをスタートする。3の倍数が来たらFizzと言う。5の倍数が来たらBuzzと言う。3と5の公倍数が来たらFizzBuzzと言う。間違ったら負け。<br>
+次のようになる。<br>
+0, 1, 2, fizz（3の倍数）, 4, buzz（5の倍数）, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz（3と5の公倍数）, 16, 17, fizz,…</p><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>fizzbuzz配列を表示させる</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>「プログラムを書けるプログラマ」を見分けるためのテストにも使われる有名なテーマ。</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1）ユーザにfizzbuzzで遊ぶ最後の数字を入力してもらう。（終わりの数を設定しないと永遠に続くから）<br>（2）0からスタートして1ずつ増やし、ユーザが指定した数までいく。その間に<br>3の倍数がきたらfizzと表示<br>5の倍数がきたらbuzzと表示<br>3と5の公倍数がきたらfizzbuzzと表示<br>（3）結果を表示する</td>
+</tr>
+</tbody>
+</table><h3 id="コード9"><a class="anchor hidden-xs" href="#コード9" title="コード9"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-comment"># fizzbuzzプログラム</span>
+n = int(input(<span class="hljs-string">'最後の数を入力してください'</span>))
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range( <span class="hljs-number">1</span>, n ):
+     <span class="hljs-keyword">if</span> i % <span class="hljs-number">15</span> == <span class="hljs-number">0</span>:
+          print(<span class="hljs-string">"fizzbuzz"</span>, end=<span class="hljs-string">', '</span>)
+     <span class="hljs-keyword">elif</span> i % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>:
+          print(<span class="hljs-string">"fizz "</span>, end=<span class="hljs-string">','</span>)
+     <span class="hljs-keyword">elif</span> i % <span class="hljs-number">5</span> == <span class="hljs-number">0</span>:
+          print(<span class="hljs-string">"buzz"</span>, end=<span class="hljs-string">', '</span>)
+     <span class="hljs-keyword">else</span>:
+          print( i, end=<span class="hljs-string">','</span>)
+</div></div></code></pre><h3 id="コードの解説8"><a class="anchor hidden-xs" href="#コードの解説8" title="コードの解説8"><span class="octicon octicon-link"></span></a>コードの解説</h3><table>
+<thead>
+<tr>
+<th>No</th>
+<th>行</th>
+<th>対象</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td>最後の数を入力してください</td>
+<td>・101とか、入れてみてください</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>for i in range( 1, n ):</td>
+<td>・range() 関数の引数が1とnなので、1から100までの範囲でfizzbuzzをやります</td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td>□□□□ if i % 15 == 0:</td>
+<td>・3と5の公倍数は15<br>・下記のように表記してもOK<br>・if i % 3 == 0 and i % 5 ==0 :</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td>□□□□print(“fizzbuzz”, end = ‘,’)</td>
+<td>・コンマ区切りで表記させる方法<br>・end = ‘, ’ を外すと、縦長に表記する</td>
+</tr>
+</tbody>
+</table><h2 id="11-数当てゲーム"><a class="anchor hidden-xs" href="#11-数当てゲーム" title="11-数当てゲーム"><span class="octicon octicon-link"></span></a>11　数当てゲーム</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>コンピュータが決めた数を人間が当てるゲーム。</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>モジュール random</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1）コピペしてゲームを楽しむ<br>（2）コードの作り方の意味を考える<br>（3）改変する</td>
+</tr>
+</tbody>
+</table><h3 id="コード10"><a class="anchor hidden-xs" href="#コード10" title="コード10"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code"><span class="hljs-keyword">import</span> random
+
+secret = random.randrange( <span class="hljs-number">1</span>, <span class="hljs-number">101</span> )
+
+guess = <span class="hljs-number">0</span>
+tries = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> guess != secret:
+    guess = int( input(<span class="hljs-string">"1から100までの整数を一つ選んでください: "</span>) )
+    tries = tries + <span class="hljs-number">1</span>
+    
+    <span class="hljs-keyword">if</span> guess &gt; secret:
+        print(<span class="hljs-string">"もうちょっと小さい数です"</span>)
+    <span class="hljs-keyword">elif</span> guess &lt; secret:
+        print(<span class="hljs-string">"もうちょっとと大きい数です"</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">"当たり！"</span> )
+    
+print(<span class="hljs-string">"予想回数は "</span>, tries,<span class="hljs-string">"回でした"</span>)
+
+</div></div></code></pre><h2 id="12-じゃんけんゲーム"><a class="anchor hidden-xs" href="#12-じゃんけんゲーム" title="12-じゃんけんゲーム"><span class="octicon octicon-link"></span></a>12　じゃんけんゲーム</h2><table>
+<thead>
+<tr>
+<th>要　点</th>
+<th>説　明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プログラムの機能</td>
+<td>コンピュータとじゃんけんで勝負するゲーム</td>
+</tr>
+<tr>
+<td>得られる知識</td>
+<td>リストの使い方。勝敗を決めるやり方</td>
+</tr>
+<tr>
+<td>手順</td>
+<td>（1）コピペしてゲームを楽しむ<br>（2）コードの作り方の意味を考える<br>（3）改変する</td>
+</tr>
+</tbody>
+</table><h3 id="コード11"><a class="anchor hidden-xs" href="#コード11" title="コード11"><span class="octicon octicon-link"></span></a>コード</h3><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="0"></span>
+<span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code"><span class="hljs-keyword">import</span> random
+
+moves = [<span class="hljs-string">'r'</span>, <span class="hljs-string">'p'</span>, <span class="hljs-string">'s'</span>]
+player_wins = [<span class="hljs-string">'pr'</span>, <span class="hljs-string">'sp'</span>, <span class="hljs-string">'rs'</span>]
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    player_move = input(<span class="hljs-string">"何を出す？:"</span>)
+    <span class="hljs-keyword">if</span> player_move == <span class="hljs-string">"q"</span>:
+        <span class="hljs-keyword">break</span>
+    computer_move = random.choice(moves)
+
+    print(<span class="hljs-string">"キミ: "</span>, player_move)
+    print(<span class="hljs-string">"コンピュータ: "</span>, computer_move)
+
+    <span class="hljs-keyword">if</span> player_move == computer_move:
+        print(<span class="hljs-string">"あいこ"</span>)
+    <span class="hljs-keyword">elif</span> player_move + computer_move <span class="hljs-keyword">in</span> player_wins:
+        print(<span class="hljs-string">"キミの勝ち!"</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">"キミの負け!"</span>)
+</div></div></code></pre><p>以上。</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#2nd-Step-の-基礎トレ-説明と確認" title="2nd Step の 基礎トレ　説明と確認">2nd Step の 基礎トレ　説明と確認</a><ul class="nav">
+<li class=""><a href="#0-1st-Stepの復習（ここで知る新しい知識も入っています）" title="0　1st Stepの復習（ここで知る新しい知識も入っています）">0　1st Stepの復習（ここで知る新しい知識も入っています）</a><ul class="nav">
+<li class=""><a href="#電卓" title="電卓">電卓</a></li>
+<li class=""><a href="#変数" title="変数">変数</a></li>
+<li class=""><a href="#エラー" title="エラー">エラー</a></li>
+<li class=""><a href="#文字列" title="文字列">文字列</a></li>
+<li class=""><a href="#print（）関数" title="print（）関数">print（）関数</a></li>
+<li class=""><a href="#文字列とインデックス" title="文字列とインデックス">文字列とインデックス</a></li>
+<li class=""><a href="#文字列とスライス（切り取り）" title="文字列とスライス（切り取り）">文字列とスライス（切り取り）</a></li>
+<li class=""><a href="#文字列は変更不可能（イミュータブル）" title="文字列は変更不可能（イミュータブル）">文字列は変更不可能（イミュータブル）</a></li>
+<li class=""><a href="#len関数" title="len()関数">len()関数</a></li>
+<li><a href="#前の二つの数を足すと次の数になる数列のプログラミング" title="前の二つの数を足すと次の数になる数列のプログラミング">前の二つの数を足すと次の数になる数列のプログラミング</a></li>
+</ul>
+</li>
+<li class=""><a href="#1-今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）" title="1　今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）">1　今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）</a><ul class="nav">
+<li class=""><a href="#コード" title="コード">コード</a></li>
+<li class=""><a href="#コードの解説" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#2-今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）" title="2　今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）">2　今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）</a><ul class="nav">
+<li class=""><a href="#コード1" title="コード">コード</a></li>
+<li class=""><a href="#コードの解説1" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#3-鋭角、直角、鈍角の判定プログラム（if-elif-else文）" title="3　鋭角、直角、鈍角の判定プログラム（if-elif-else文）">3　鋭角、直角、鈍角の判定プログラム（if-elif-else文）</a><ul class="nav">
+<li class=""><a href="#コード2" title="コード">コード</a></li>
+<li><a href="#コードの解説2" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#4-複雑な条件判断処理" title="4　複雑な条件判断処理">4　複雑な条件判断処理</a><ul class="nav">
+<li><a href="#コード3" title="コード">コード</a></li>
+<li><a href="#コードの解説3" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#5-BMI判定プログラム" title="5　BMI判定プログラム">5　BMI判定プログラム</a><ul class="nav">
+<li><a href="#コード4" title="コード">コード</a></li>
+<li><a href="#コードの解説4" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#6-1月から12月まで表示させるプログラム（for文を使わない場合）" title="6　1月から12月まで表示させるプログラム（for文を使わない場合）">6　1月から12月まで表示させるプログラム（for文を使わない場合）</a><ul class="nav">
+<li><a href="#コード5" title="コード">コード</a></li>
+</ul>
+</li>
+<li><a href="#7-1月から12月まで表示させるプログラム（for文を使う場合）" title="7　1月から12月まで表示させるプログラム（for文を使う場合）">7　1月から12月まで表示させるプログラム（for文を使う場合）</a><ul class="nav">
+<li><a href="#コード6" title="コード">コード</a></li>
+<li><a href="#コードの解説5" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#8-range-関数の引数のセット方法のバリエーション" title="8　range() 関数の引数のセット方法のバリエーション">8　range() 関数の引数のセット方法のバリエーション</a><ul class="nav">
+<li><a href="#コード7" title="コード">コード</a></li>
+<li><a href="#コードの解説6" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#9-1月から12月まで表示させるプログラム（while文を使う場合）" title="9　1月から12月まで表示させるプログラム（while文を使う場合）">9　1月から12月まで表示させるプログラム（while文を使う場合）</a><ul class="nav">
+<li><a href="#コード8" title="コード">コード</a></li>
+<li><a href="#コードの解説7" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#10-fizzbuzz-フィズバズ" title="10　fizzbuzz　フィズバズ">10　fizzbuzz　フィズバズ</a><ul class="nav">
+<li><a href="#コード9" title="コード">コード</a></li>
+<li><a href="#コードの解説8" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#11-数当てゲーム" title="11　数当てゲーム">11　数当てゲーム</a><ul class="nav">
+<li><a href="#コード10" title="コード">コード</a></li>
+</ul>
+</li>
+<li class=""><a href="#12-じゃんけんゲーム" title="12　じゃんけんゲーム">12　じゃんけんゲーム</a><ul class="nav">
+<li class=""><a href="#コード11" title="コード">コード</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#2nd-Step-の-基礎トレ-説明と確認" title="2nd Step の 基礎トレ　説明と確認">2nd Step の 基礎トレ　説明と確認</a><ul class="nav">
+<li class=""><a href="#0-1st-Stepの復習（ここで知る新しい知識も入っています）" title="0　1st Stepの復習（ここで知る新しい知識も入っています）">0　1st Stepの復習（ここで知る新しい知識も入っています）</a><ul class="nav">
+<li class=""><a href="#電卓" title="電卓">電卓</a></li>
+<li class=""><a href="#変数" title="変数">変数</a></li>
+<li class=""><a href="#エラー" title="エラー">エラー</a></li>
+<li class=""><a href="#文字列" title="文字列">文字列</a></li>
+<li class=""><a href="#print（）関数" title="print（）関数">print（）関数</a></li>
+<li class=""><a href="#文字列とインデックス" title="文字列とインデックス">文字列とインデックス</a></li>
+<li class=""><a href="#文字列とスライス（切り取り）" title="文字列とスライス（切り取り）">文字列とスライス（切り取り）</a></li>
+<li class=""><a href="#文字列は変更不可能（イミュータブル）" title="文字列は変更不可能（イミュータブル）">文字列は変更不可能（イミュータブル）</a></li>
+<li class=""><a href="#len関数" title="len()関数">len()関数</a></li>
+<li><a href="#前の二つの数を足すと次の数になる数列のプログラミング" title="前の二つの数を足すと次の数になる数列のプログラミング">前の二つの数を足すと次の数になる数列のプログラミング</a></li>
+</ul>
+</li>
+<li class=""><a href="#1-今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）" title="1　今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）">1　今日が誕生日だったらお祝いの言葉を表示するプログラム（if文）</a><ul class="nav">
+<li class=""><a href="#コード" title="コード">コード</a></li>
+<li class=""><a href="#コードの解説" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#2-今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）" title="2　今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）">2　今日が非誕生日だったらお祝いの言葉を表示するプログラム（if-else文）</a><ul class="nav">
+<li class=""><a href="#コード1" title="コード">コード</a></li>
+<li class=""><a href="#コードの解説1" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#3-鋭角、直角、鈍角の判定プログラム（if-elif-else文）" title="3　鋭角、直角、鈍角の判定プログラム（if-elif-else文）">3　鋭角、直角、鈍角の判定プログラム（if-elif-else文）</a><ul class="nav">
+<li class=""><a href="#コード2" title="コード">コード</a></li>
+<li><a href="#コードの解説2" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#4-複雑な条件判断処理" title="4　複雑な条件判断処理">4　複雑な条件判断処理</a><ul class="nav">
+<li><a href="#コード3" title="コード">コード</a></li>
+<li><a href="#コードの解説3" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li class=""><a href="#5-BMI判定プログラム" title="5　BMI判定プログラム">5　BMI判定プログラム</a><ul class="nav">
+<li><a href="#コード4" title="コード">コード</a></li>
+<li><a href="#コードの解説4" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#6-1月から12月まで表示させるプログラム（for文を使わない場合）" title="6　1月から12月まで表示させるプログラム（for文を使わない場合）">6　1月から12月まで表示させるプログラム（for文を使わない場合）</a><ul class="nav">
+<li><a href="#コード5" title="コード">コード</a></li>
+</ul>
+</li>
+<li><a href="#7-1月から12月まで表示させるプログラム（for文を使う場合）" title="7　1月から12月まで表示させるプログラム（for文を使う場合）">7　1月から12月まで表示させるプログラム（for文を使う場合）</a><ul class="nav">
+<li><a href="#コード6" title="コード">コード</a></li>
+<li><a href="#コードの解説5" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#8-range-関数の引数のセット方法のバリエーション" title="8　range() 関数の引数のセット方法のバリエーション">8　range() 関数の引数のセット方法のバリエーション</a><ul class="nav">
+<li><a href="#コード7" title="コード">コード</a></li>
+<li><a href="#コードの解説6" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#9-1月から12月まで表示させるプログラム（while文を使う場合）" title="9　1月から12月まで表示させるプログラム（while文を使う場合）">9　1月から12月まで表示させるプログラム（while文を使う場合）</a><ul class="nav">
+<li><a href="#コード8" title="コード">コード</a></li>
+<li><a href="#コードの解説7" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#10-fizzbuzz-フィズバズ" title="10　fizzbuzz　フィズバズ">10　fizzbuzz　フィズバズ</a><ul class="nav">
+<li><a href="#コード9" title="コード">コード</a></li>
+<li><a href="#コードの解説8" title="コードの解説">コードの解説</a></li>
+</ul>
+</li>
+<li><a href="#11-数当てゲーム" title="11　数当てゲーム">11　数当てゲーム</a><ul class="nav">
+<li><a href="#コード10" title="コード">コード</a></li>
+</ul>
+</li>
+<li class=""><a href="#12-じゃんけんゲーム" title="12　じゃんけんゲーム">12　じゃんけんゲーム</a><ul class="nav">
+<li class=""><a href="#コード11" title="コード">コード</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
