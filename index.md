@@ -4,7 +4,7 @@
 - [1st Step](./python_first_step)
 - [2nd Step](./python_second_step)
 - [2nd Step hackmd rendered](https://learning-programing-at-uec.github.io/basic_training/python_second_step_test.html)
-- 3rd Step(作成中)
+- [3rd Step](./python_third_step)
 
 ## HTMLとCSS(作成中)
 
