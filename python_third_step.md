@@ -508,3 +508,5 @@ elif a > b :
 else :
     print("あなたの負け")
 {% endhighlight %}
+
+[Top Page](../index)
