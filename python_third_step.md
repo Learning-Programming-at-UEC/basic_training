@@ -509,4 +509,4 @@ else :
     print("あなたの負け")
 {% endhighlight %}
 
-[Top Page](../index)
+[Top Page](./index)
