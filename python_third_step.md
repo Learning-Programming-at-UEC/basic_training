@@ -394,10 +394,10 @@ def sankakkei(hen,n):
     if n == 0:
         down()
     else:
-    for i in range(3):
-        forward(hen)
-        left(120)
-        sankakkei(hen / 2, n - 1)
+        for i in range(3):
+            forward(hen)
+            left(120)
+            sankakkei(hen / 2, n - 1)
 
 speed(0)
 up()
